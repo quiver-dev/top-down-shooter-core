@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckan5lwiqvq2a"]
+
+[ext_resource type="Script" path="res://template_core/character/character.gd" id="1_ygcq1"]
+
+[node name="Character" type="CharacterBody2D"]
+editor_description = "This is a Default Character.
+It can be your player character/an enemy/ a friendly NPC..."
+motion_mode = 1
+script = ExtResource( "1_ygcq1" )
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="Behavior" type="Node2D" parent="."]

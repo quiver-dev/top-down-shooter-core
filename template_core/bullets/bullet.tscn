@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqsaw7jghbxn4"]
+
+[ext_resource type="Script" path="res://template_core/bullets/bullet.gd" id="1_7nxq7"]
+
+[node name="Bullet" type="RigidDynamicBody2D"]
+position = Vector2(1, 1)
+collision_layer = 4
+collision_mask = 3
+gravity_scale = 0.0
+script = ExtResource( "1_7nxq7" )

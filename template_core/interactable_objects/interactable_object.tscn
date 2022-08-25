@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkc8i2tfohtub"]
+
+[ext_resource type="Script" path="res://template_core/interactable_objects/interactable_object.gd" id="1_xjgx3"]
+
+[node name="InteractableObject" type="Node2D"]
+script = ExtResource( "1_xjgx3" )
+
+[node name="Action" type="Node2D" parent="."]
+
+[node name="InteractMechanic" type="Node2D" parent="."]

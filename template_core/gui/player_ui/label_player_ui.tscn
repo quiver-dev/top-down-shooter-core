@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://template_core/gui/player_ui/player_ui.tscn" id="1_l24ys"]
+[ext_resource type="Script" path="res://template_core/gui/player_ui/label_player_ui.gd" id="2_dol8x"]
+
+[node name="PlayerUI" instance=ExtResource( "1_l24ys" )]
+offset_right = -997.0
+offset_bottom = -574.0
+script = ExtResource( "2_dol8x" )
+
+[node name="Label" type="Label" parent="." index="0"]
+offset_top = 100.0
+offset_right = 27.0
+offset_bottom = 126.0
+text = "--/--"
+metadata/_edit_layout_mode = 0
+metadata/_edit_use_custom_anchors = false

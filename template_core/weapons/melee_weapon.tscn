@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://template_core/weapons/melee_weapon.gd" id="1_1nce0"]
+
+[node name="MeleeWeapon" type="Area2D"]
+editor_description = "Damage characters in the Area2D
+Add a CollisionShape2D or CollisionPolygon2D"
+collision_layer = 16
+collision_mask = 10
+script = ExtResource( "1_1nce0" )
+
+[connection signal="body_entered" from="." to="." method="_on_melee_weapon_body_entered"]
