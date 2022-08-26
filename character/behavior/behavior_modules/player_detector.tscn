@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbx5e1m0wvfyn"]
+
+[ext_resource type="Script" path="res://top-down-shooter-core/character/behavior/behavior_modules/player_detector.gd" id="1_sia63"]
+
+[node name="PlayerDetector" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_sia63")
+
+[connection signal="body_entered" from="." to="." method="_on_player_detector_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_player_detector_body_exited"]
