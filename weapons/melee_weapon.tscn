@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://template_core/weapons/melee_weapon.gd" id="1_1nce0"]
+[ext_resource type="Script" path="res://top-down-shooter-core/weapons/melee_weapon.gd" id="1_1nce0"]
 
 [node name="MeleeWeapon" type="Area2D"]
 editor_description = "Damage characters in the Area2D

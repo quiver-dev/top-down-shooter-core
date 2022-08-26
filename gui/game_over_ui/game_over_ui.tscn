@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://template_core/gui/game_over_ui/game_over_ui.gd" id="1_ajrrk"]
+[ext_resource type="Script" path="res://top-down-shooter-core/gui/game_over_ui/game_over_ui.gd" id="1_ajrrk"]
 
 [node name="GameOverUI" type="Control"]
 visible = false

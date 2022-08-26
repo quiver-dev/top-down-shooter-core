@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="PackedScene" path="res://template_core/gui/magazine_ui/magazine_ui.tscn" id="1_jivt2"]
-[ext_resource type="Script" path="res://template_core/gui/magazine_ui/label_magazine_ui.gd" id="2_b222f"]
+[ext_resource type="PackedScene" path="res://top-down-shooter-core/gui/magazine_ui/magazine_ui.tscn" id="1_jivt2"]
+[ext_resource type="Script" path="res://top-down-shooter-core/gui/magazine_ui/label_magazine_ui.gd" id="2_b222f"]
 
 [node name="MagazineUI" instance=ExtResource( "1_jivt2" )]
 offset_right = 27.0

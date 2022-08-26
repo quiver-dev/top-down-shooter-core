@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d1wr7q5evnxmw"]
 
-[ext_resource type="PackedScene" uid="uid://bkc8i2tfohtub" path="res://template_core/interactable_objects/interactable_object.tscn" id="1_omj4p"]
-[ext_resource type="Script" path="res://template_core/items/pickable_items/pickable_item.gd" id="2_lmypf"]
+[ext_resource type="PackedScene" uid="uid://bkc8i2tfohtub" path="res://top-down-shooter-core/interactable_objects/interactable_object.tscn" id="1_omj4p"]
+[ext_resource type="Script" path="res://top-down-shooter-core/items/pickable_items/pickable_item.gd" id="2_lmypf"]
 
 [node name="PickableItem" instance=ExtResource( "1_omj4p" )]
 script = ExtResource( "2_lmypf" )

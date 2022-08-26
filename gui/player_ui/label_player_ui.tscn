@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="PackedScene" path="res://template_core/gui/player_ui/player_ui.tscn" id="1_l24ys"]
-[ext_resource type="Script" path="res://template_core/gui/player_ui/label_player_ui.gd" id="2_dol8x"]
+[ext_resource type="PackedScene" path="res://top-down-shooter-core/gui/player_ui/player_ui.tscn" id="1_l24ys"]
+[ext_resource type="Script" path="res://top-down-shooter-core/gui/player_ui/label_player_ui.gd" id="2_dol8x"]
 
 [node name="PlayerUI" instance=ExtResource( "1_l24ys" )]
 offset_right = -997.0

@@ -1,4 +1,4 @@
-extends "res://template_core/gui/player_ui/player_ui.gd"
+extends "res://top-down-shooter-core/gui/player_ui/player_ui.gd"
 
 @onready var label = $Label
 

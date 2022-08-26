@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ckan5lwiqvq2a"]
 
-[ext_resource type="Script" path="res://template_core/character/character.gd" id="1_ygcq1"]
+[ext_resource type="Script" path="res://top-down-shooter-core/character/character.gd" id="1_ygcq1"]
 
 [node name="Character" type="CharacterBody2D"]
 editor_description = "This is a Default Character.
