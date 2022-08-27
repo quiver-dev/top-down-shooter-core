@@ -8,6 +8,9 @@ extends Node2D
 # You can change this variable at runtime (in _physics_process) to create your own behavior
 @onready var action := QuiverCharacterAction.new(Vector2.ZERO)
 
+# The character's physics stats, so the behavior can change max_speed and other parameters.
+var physics_stats: QuiverPhysicsStats
+
 # Returns the current character action (aiming, movement, shooting)
 func get_action() -> QuiverCharacterAction:
 	return action

@@ -7,12 +7,7 @@ enum RotationType {NONE, AIMING, MOVING}
 @export var character_stats: Resource # Type should be QuiverLifeStats
 @export var inventory: Resource # Type should be QuiverInventory
 
-@export var max_speed := 500.0
-@export var acceleration := 0.4
-@export var friction := 0.1
-
-# The impulse force applied when the character is hit (zero means no impulse)
-@export var impulse_force := 0.0
+@export var physics_stats: Resource #How the character will move
 
 # Wil rotate the entire CharacterBody2D towards the aiming/moving direction
 @export var rotate_body_towards : RotationType = RotationType.NONE
@@ -40,6 +35,7 @@ func _ready():
 	if !(behavior is QuiverCharacterBehavior):
 		printerr("Error: Behavior node is not a QuiverCharacterBehavior (add the corresponding script)")
 	
+	behavior.physics_stats = physics_stats
 
 func _physics_process(delta):
 	var action : QuiverCharacterAction = behavior.get_action()
@@ -55,9 +51,9 @@ func _physics_process(delta):
 	
 	# Character Movement
 	if action.moving_direction.length() > 0: # Accelerate
-		velocity = velocity.lerp(action.moving_direction*max_speed, acceleration)
+		velocity = velocity.lerp(action.moving_direction*physics_stats.max_speed, physics_stats.acceleration)
 	else: # Apply Friction
-		velocity = velocity.lerp(Vector2.ZERO, friction)
+		velocity = velocity.lerp(Vector2.ZERO, physics_stats.friction)
 	move_and_slide()
 	
 	# Character visual update
@@ -79,7 +75,7 @@ func hit(damage:=1, from:=Vector2.ZERO):
 	character_stats.damage(damage)
 	if character_stats.current_life == 0:
 		die()
-	_impulse = from*impulse_force
+	_impulse = from*physics_stats.impulse_force
 
 func die():
 	queue_free()
