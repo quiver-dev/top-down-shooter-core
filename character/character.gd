@@ -57,7 +57,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	# Character visual update
-	visual.update_visual(action)
+	visual.update_visual_and_state(action)
 	
 	# Shooting
 	if action.shoot:
