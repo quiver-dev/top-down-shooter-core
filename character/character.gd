@@ -59,6 +59,11 @@ func _physics_process(delta):
 	# Character visual update
 	visual.update_visual_and_state(action)
 	
+	# Detect and handle collisions
+	for i in get_slide_collision_count():
+		behavior.handle_collision(get_slide_collision(i))
+		
+	
 	# Shooting
 	if action.shoot:
 		action.shoot = false
@@ -79,3 +84,4 @@ func hit(damage:=1, from:=Vector2.ZERO):
 
 func die():
 	queue_free()
+
