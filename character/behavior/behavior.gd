@@ -24,12 +24,19 @@ func handle_collision(collision: KinematicCollision2D)->void:
 	const LAYER_WALLS = 7
 	
 	var collider = collision.get_collider()
-	if collider.get_collision_layer_value(LAYER_WORLD) or collider.get_collision_layer_value(LAYER_WALLS):
-		on_wall_collision(collision)
-	if collider.get_collision_layer_value(LAYER_PLAYER):
-		on_player_collision(collision)
-	if collider.get_collision_layer_value(LAYER_ENEMIES):
-		on_enemy_collision(collision)
+	
+	# There is currently no way to know the tile type, or retreive any data
+	# See this issue https://github.com/godotengine/godot/issues/65009
+	if collider is TileMap:
+		return
+	
+	if collider is CollisionObject2D:
+		if collider.get_collision_layer_value(LAYER_WORLD) or collider.get_collision_layer_value(LAYER_WALLS):
+			on_wall_collision(collision)
+		if collider.get_collision_layer_value(LAYER_PLAYER):
+			on_player_collision(collision)
+		if collider.get_collision_layer_value(LAYER_ENEMIES):
+			on_enemy_collision(collision)
 	
 # Override this to define a behavoir when colliding with a wall
 func on_wall_collision(collision: KinematicCollision2D)->void:
