@@ -1,6 +1,6 @@
 extends Control
 
-@export var magazine: Resource # type should be QuiverMagazine
+@export var magazine: QuiverMagazine
 
 func _ready():
 	if magazine is QuiverMagazine:

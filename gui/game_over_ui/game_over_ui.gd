@@ -3,7 +3,7 @@ extends Control
 # Emited if the player wants to restart the game
 signal restart
 
-@export var player_stats : Resource #Should be of type QuiverPlayerStats
+@export var player_stats : QuiverPlayerStats
 
 func _ready():
 	if player_stats is QuiverCharacterStats:

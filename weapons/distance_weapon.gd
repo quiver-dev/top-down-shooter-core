@@ -7,7 +7,7 @@ extends Node2D
 @export var bullet_scene : PackedScene
 
 # The weapon magazine (don't forget to check local_to_scene if you want to instantiate the weapon multiple times)
-@export var magazine : Resource # Should be QuiverMagazine (but Godot doesn't handle custom export resources yet)
+@export var magazine : QuiverMagazine
 
 @export var holder_character : NodePath
 
