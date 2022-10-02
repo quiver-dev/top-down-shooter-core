@@ -2,21 +2,21 @@ extends QuiverInteractMechanic
 
 # An example of QuiverInteractMechanic that triggers when a character collide with the object's body
 
-# The path to the body of the object (should be a RigidDynamicBody2D)
+# The path to the body of the object (should be a RigidBody2D)
 @export var object_body_path : NodePath
 
 # Hold the body node
-var _object_body : RigidDynamicBody2D
+var _object_body : RigidBody2D
 
 
 func _ready():
 	var node = get_node(object_body_path)
-	if node is RigidDynamicBody2D:
+	if node is RigidBody2D:
 		_object_body = node
 
 		# This is to make sure the contact with the character will be reported
 		_object_body.contact_monitor = true
-		_object_body.contacts_reported = 1
+		_object_body.max_contacts_reported = 1
  
 		_object_body.body_entered.connect(self._body_entered)
 		

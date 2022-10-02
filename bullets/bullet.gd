@@ -1,4 +1,4 @@
-extends RigidDynamicBody2D
+extends RigidBody2D
 class_name QuiverBullet
 
 @export var speed := 1500.0 # Bullet speed
