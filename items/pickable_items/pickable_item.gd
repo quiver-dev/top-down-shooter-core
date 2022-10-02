@@ -6,7 +6,7 @@ class_name QuiverPickableItem
 # It can be interacted (to pick it up, or use it instantly) as an interactable object.
 
 # The corresponding item
-@export var item: Resource # Type should be QuiverItem
+@export var item: QuiverItem
 
 
 func _get_configuration_warnings():

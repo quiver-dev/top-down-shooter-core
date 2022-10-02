@@ -12,7 +12,7 @@ class_name QuiverItem
 @export var stack_size: int # <= 0 means infinity
 
 # A QuiverItemUseAction resource, defines what will happen when the item will be used
-@export var use_action: Resource # Type: QuiverItemUseAction
+@export var use_action: QuiverItemUseAction
 
 # Link to the corresponding pickable item scene, if you need to drop the item back on the floor
 @export_file("*.tscn") var pickable_item_scene

@@ -4,10 +4,10 @@ class_name QuiverCharacter
 
 enum RotationType {NONE, AIMING, MOVING}
 
-@export var character_stats: Resource # Type should be QuiverLifeStats
-@export var inventory: Resource # Type should be QuiverInventory
+@export var character_stats: QuiverCharacterStats
+@export var inventory: QuiverInventory
 
-@export var physics_stats: Resource #How the character will move
+@export var physics_stats: QuiverPhysicsStats
 
 # Wil rotate the entire CharacterBody2D towards the aiming/moving direction
 @export var rotate_body_towards : RotationType = RotationType.NONE
