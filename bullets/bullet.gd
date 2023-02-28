@@ -15,6 +15,10 @@ var _bounce_count := 0
 
 signal bullet_destroyed # Emited when the bullet is destroyed
 
+func _ready():
+	self.tree_exited.connect(_on_tree_exited)
+
+
 func init(shoot_direction):
 	if shoot_direction != null:
 		_velocity = speed*shoot_direction
@@ -56,6 +60,5 @@ func place_impact(collider, normal):
 	impact.global_transform = global_transform
 	impact.global_rotation = normal.angle()
 
-func queue_free():
+func _on_tree_exited():
 	bullet_destroyed.emit()
-	super.queue_free()
