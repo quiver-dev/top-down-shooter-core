@@ -17,8 +17,7 @@ Created by [Quiver](https://quiver.dev).
 * Godot 4.0 RC 6 or higher
 
 ## Installation Instructions
-* Clone this repository from Github
-* Open the project file in Godot 4 and run it to play a few example games
+* Currently this repository can't be run on its own. Take a look at the [Tiny Wizard repository](https://github.com/quiver-dev/tiny-wizard-demo) to see an example of how it can be used.
 
 ## Questions/Bugs/Suggestions
 For bugs and feature requests, feel free to file an issue on Github.
