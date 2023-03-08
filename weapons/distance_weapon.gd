@@ -2,7 +2,7 @@ extends Node2D
 
 # This covers the shooting weapons
 
-@export var shoot_delay := 0.2 # Time between two bullets being shooted
+@export var shoot_delay := 0.2 # Time between two bullets being shot
 
 @export var bullet_scene : PackedScene
 

@@ -40,15 +40,12 @@ func handle_collision(collision: KinematicCollision2D)->void:
 	
 # Override this to define a behavoir when colliding with a wall
 func on_wall_collision(collision: KinematicCollision2D)->void:
-#	print("Unhandled wall collision from ", name, " with", collision.get_collider().name ," at ", collision.get_position())
 	pass
 
 # Override this to define a behavoir when colliding with an enemy
 func on_enemy_collision(collision: KinematicCollision2D)->void:
-#	print("Unhandled enemy collision from ", name, " with", collision.get_collider().name ," at ", collision.get_position())
 	pass
 
 # Override this to define a behavoir when colliding with a player
 func on_player_collision(collision: KinematicCollision2D)-> void:
-#	print("Unhandled player collision from ", name, " with", collision.get_collider().name ," at ", collision.get_position())
 	pass

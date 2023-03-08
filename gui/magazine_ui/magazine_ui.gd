@@ -10,4 +10,3 @@ func _ready():
 # Override this function to make your own UI
 func update_ui():
 	print("MagazineUI: %d/%d" % [magazine.ammo_count, magazine.capacity])
-	pass

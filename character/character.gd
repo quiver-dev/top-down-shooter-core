@@ -23,7 +23,7 @@ enum RotationType {NONE, AIMING, MOVING}
 
 var _impulse := Vector2.ZERO
 
-# Emited when the behavior asks to shoot
+# Emitted when the behavior asks to shoot
 # Connect this signal to the current weapon shoot function
 signal shoot
 
