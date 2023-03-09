@@ -13,7 +13,7 @@ var _velocity: Vector2
 var _t := 0.0
 var _bounce_count := 0
 
-signal bullet_destroyed # Emited when the bullet is destroyed
+signal bullet_destroyed # Emitted when the bullet is destroyed
 
 func _ready():
 	self.tree_exited.connect(_on_tree_exited)

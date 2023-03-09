@@ -62,7 +62,7 @@ var inventory: Array[ItemStack] = []
 # This Dictionnary helps to keep how much of each item is currently in the inventory
 var item_counts := {}
 
-# A signal emited when an item count is changed
+# A signal emitted when an item count is changed
 signal item_changed(item)
 
 

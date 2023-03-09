@@ -3,7 +3,7 @@ extends Resource
 
 # This is the Magazine of any shooting weapon
 
-# Emited when the magazine state changed
+# Emitted when the magazine state changed
 signal magazine_changed
 
 # This is the maximum number of ammo you can store in the magazine (<=0 means infinite)

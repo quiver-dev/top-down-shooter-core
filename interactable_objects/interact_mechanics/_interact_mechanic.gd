@@ -5,7 +5,7 @@ class_name QuiverInteractMechanic
 # Please do not modify this script.
 # If needed, you can create your own type of QuiverInteractMechanic by extending this script.
 
-# Emited when a character interacts with the object.
+# Emitted when a character interacts with the object.
 signal interacted(character)
 
 

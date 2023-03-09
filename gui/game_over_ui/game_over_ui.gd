@@ -1,6 +1,6 @@
 extends Control
 
-# Emited if the player wants to restart the game
+# Emitted if the player wants to restart the game
 signal restart
 
 @export var player_stats : QuiverPlayerStats

@@ -5,9 +5,9 @@ extends Resource
 # You can use it to share your player character stats with the UI
 # /!\ Don't forget to  set local to scene on if you want to instantiate different characters with the same TemplateCharacterStats resources
 
-# emited when the character is supposed to die (no more life)
+# emitted when the character is supposed to die (no more life)
 signal died
-# emited when one of the character stats has changed
+# emitted when one of the character stats has changed
 signal stats_changed
 
 # the current max life of the character (should be greater than zero
