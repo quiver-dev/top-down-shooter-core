@@ -10,4 +10,3 @@ func _ready():
 # Override this function to make your own UI
 func update_ui():
 	print("PlayerStats: %d/%d" % [player_stats.current_life, player_stats.max_life])
-	pass

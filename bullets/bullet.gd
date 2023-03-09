@@ -4,6 +4,7 @@ class_name QuiverBullet
 @export var speed := 1500.0 # Bullet speed
 @export var life_time := 0.0 # Destroy after some time (<=0 means infinite)
 @export var max_bounce := 0 # The number of time the bullet can bounce (negative value means infinite bouces)
+@export var face_movement_direction := false # Whether this bullet should rotate to face the direction it's moving
 
 @export var damage := 1.0
 
@@ -22,9 +23,10 @@ func _ready():
 func init(shoot_direction):
 	if shoot_direction != null:
 		_velocity = speed*shoot_direction
+		if face_movement_direction:
+			look_at(_velocity + global_position)
 	else:
 		_velocity = global_transform.x * speed
-
 
 func _physics_process(delta):
 	var collision := move_and_collide(_velocity*delta)
@@ -32,8 +34,6 @@ func _physics_process(delta):
 		var collider = collision.get_collider()
 		if collider.has_method("hit"):
 			collider.hit(damage, (collider.global_position - global_position).normalized())
-			
-			
 			
 			place_impact(collider, collision.get_normal())
 			self.queue_free()
